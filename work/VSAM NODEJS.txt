@@ -1,0 +1,30 @@
+
+
+-----------------------------------
+
+https://github.com/irisbaron/vsam-express-demo
+
+------------------------------------
+
+https://www.redbooks.ibm.com/pubs/pdfs/redbooks/sg246105.pdf
+
+key-sequenced (KSDS), entry-sequenced (ESDS), and relative record (RRDS)
+
+
+
+                                   VSAM DATASET INFORMTION
+
+                                                  NUM     NUM     NUM      NUM    NUM   NUM
+                                                LOGICAL DELETED INSERTED UPDATED  CI    CA
+            DCADSNAM            TYPE RKP   KLN   RECS    RECS     RECS    RECS   SPLIT SPLIT
+______________________________ ____ ____ _____ _______ _______ ________ _______ _____ _____
+
+ USRACCT.VSAM.AIRLIST.D         KSDS   49     8      19       0        0       0     1     0
+ USRACCT.VSAM.AIRLIST.I         KSDS   49     8       1       0        0       0     0     0
+ USRACCT.VSAM.EMPLFILE.D        KSDS    0     3      18       2        2       2     2     0
+ USRACCT.VSAM.EMPLFILE.I        KSDS    0     3       1       0        0       0     0     0
+ USRACCT.VSAMESDS.SALEFILE.D    ESDS                 14       0        0       0     0     0
+ USRACCT.VSAMESDS.TEMPFILE.D    ESDS                 70       0        0       0     0     0
+ SYS1.VVDS.VVPWRKC              ESDS                  0       0        0       0     0     0
+
+ *** GRAND TOTAL (     7 ITEMS)                     123       2        2       2     3     0
