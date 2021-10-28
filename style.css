@@ -1,0 +1,126 @@
+.dark-mode{
+  filter: invert(1000%);
+}
+
+.clear-mode{
+  filter: invert(0%);
+}
+
+html {
+  overflow-y: scroll;
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.theme-light {
+  --color-primary: white;
+  --font-color: black;
+}
+.theme-dark {
+  --color-primary: black;
+  --font-color: white;
+}
+
+table,
+thead,
+tr,
+tbody,
+th,
+td {
+  text-align: center;
+}
+
+.table td {
+  text-align: center;
+}
+
+.tooltip-inner {
+  white-space:pre-wrap;
+}
+
+.header{
+  border: 1px solid #ced4da;
+  border-radius: 6px 6px 0 0;
+  background-color: #f8f9fa;
+  height: 40px;
+  text-align: center;
+}
+
+.expand{
+  border-left: 1px solid #ced4da;
+  border-right: 1px solid #ced4da;
+}
+
+.button:hover{
+  cursor: pointer;
+  overflow: visible;
+  color: rgb(22, 22, 182);
+}
+
+textarea {
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 0 0 6px 6px !important;
+}
+
+.nav-link:focus,.nav-link:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
+[class="invert"] {
+  filter: invert(1) hue-rotate(180deg)
+}
+
+body { padding-right: 0 !important }
+
+.hide{
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.gutter{
+  /* background-color: grey; */
+  background-repeat: no-repeat;
+  background-position: 50% center;
+}
+
+.gutter-horizontal{
+  cursor: ns-resize;
+  height: 4px;
+  padding: 0;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAACCAIAAADaehubAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAgSURBVBhXY6yvr2dgYGhoaGBguNPQsIRINhMQkwwYGACsoRGBcDhyXgAAAABJRU5ErkJggg==");
+}
+
+
+#parent {
+  background-color: #fff;
+  color: #444;
+  /* Use flexbox */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#input-text, #output-text {
+
+  /* Use box-sizing so that element's outerwidth will match width property */
+  box-sizing: border-box;
+
+  /* Allow box to grow and shrink, and ensure they are all equally sized */
+
+}
+
+
+#output-text {
+  flex: 1;
+}
