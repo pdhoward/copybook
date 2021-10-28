@@ -1,0 +1,13 @@
+
+
+
+https://github.com/douglaspands/copybook2json
+
+https://github.com/mayur44popade/cobol2json
+
+
+https://github.com/moitorrente/Copybook-analyzer
+
+
+a workflow diagram - 
+https://github.com/antongeorgescu/cobol-nodejs-data-hooks
