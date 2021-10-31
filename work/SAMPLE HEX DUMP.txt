@@ -1,0 +1,63 @@
+http://www.simotime.com/ksahex01.htm
+
+https://en.wikipedia.org/wiki/Hex_dump
+
+Sample Hex-Dump Output
+The HEX-dump may provide up to six lines of information based on the user-defined parameters.
+The following is an example of the HEX-Dump output for a VSAM, KSDS. After the header information the dump format for each record is as follows.
+The first two lines are the position indicators that show the byte position within the record.
+The third line show the possible ASCII character translation
+The fourth and fifth lines contain the HEX Dump information. The fourth line is the high-order nibble (four bits) of the byte. The fifth line is the low-order nibble (four bits) of the byte.
+The sixth line is the possible EBCDIC character translation
+
+
+
+//QSAMCRT1 EXEC PGM=IEBGENER
+//SYSPRINT DD  SYSOUT=*
+//SYSIN    DD  DUMMY
+//* :....1....:....2....:....3....:....4....:....5....:....6....:....7....:....8
+//SYSUT1   DD  *
+000100 Anderson       Adrian    111 Peachtree Plaza     Atlanta        GA 26101
+000200 Brown          Billie    222 Baker Boulevard     Baltimore      MD 35702
+000300 Carson         Cameron   333 Crenshaw Blvd.      Cupertino      CA 96154
+000400 Davidson       Dion      444 Main Street         Wilmington     DE 27323
+000500 Everest        Evan      555 5TH Avenue          New York       NY 10341
+000600 Franklin       Francis   666 66TH Avenue         Bedrock        NY 11903
+000700 Garfunkel      Gwen      777 77TH Street         New York       NY 16539
+000800 Harrison       Hilary    888 88TH Street         Pocatello      ID 79684
+000900 Isley          Isabel    999 99TH Avenue         Indianapolis   IN 38762
+001000 Johnson        Jamie     1010 Paradise Drive     Larkspur       CA 90504
+001100 Kemper         Kelly     1111 Oak Circle         Kansas City    KS 55651
+001200 Lemond         Lesley    1212 Lockwood Road      Mohave Desert  AZ 80303
+001300 Mitchell       Marlow    1313 Miller Creek Road  Anywhere       TX 77123
+001400 Newman         Noel      1414 Park Avenue        Santa Monica   CA 90210
+001500 Osborn         Owen      1515 Center Stage       Rolling Rock   PA 36613
+001600 Powell         Pierce    PO Box 1616             Ventura        CA 97712
+001700 Quigley        Quincy    1717 Farm Hill Road     Oshkosh        WI 43389
+001800 Ripley         Ray       1818 Alien Lane         Wayout         KS 55405
+001900 Smith          Sammy     1919 Carnoustie Drive   Novato         CA 94919
+002000 Tucker         Taylor    2020 Sanger Lane        St. Paul       MN 43998
+002100 Underwood      Ulysses   2121 Wall Street        New York       NY 17623
+002200 Van Etten      Valerie   2222 Vine Street        Hollywood      CA 98775
+002300 Wilson         Wiley     2323 Main Street        Boston         MA 01472
+002400 Xray           Xavier    2424 24TH Street        Nashville      TN 44190
+002500 Young          Yanni     2525 Yonge Street       Toronto        ON 6B74A6
+002600 Zenith         Zebulon   2626 26TH Street        Dallas         TX 71922
+123456 Doe            John      123 Main Street         Anywhere       OR 88156
+
+
+00000000  30 31 32 33 34 35 36 37  38 39 41 42 43 44 45 46  |0123456789ABCDEF|
+00000010  0a 2f 2a 20 2a 2a 2a 2a  2a 2a 2a 2a 2a 2a 2a 2a  |./* ************|
+00000020  2a 2a 2a 2a 2a 2a 2a 2a  2a 2a 2a 2a 2a 2a 2a 2a  |****************|
+*
+00000040  2a 2a 20 2a 2f 0a 09 54  61 62 6c 65 20 77 69 74  |** */..Table wit|
+00000050  68 20 54 41 42 73 20 28  30 39 29 0a 09 31 09 09  |h TABs (09)..1..|
+00000060  32 09 09 33 0a 09 33 2e  31 34 09 36 2e 32 38 09  |2..3..3.14.6.28.|
+00000070  39 2e 34 32 0a                                    |9.42.|
+00000075
+
+
+
+
+
+
